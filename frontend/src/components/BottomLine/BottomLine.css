@@ -1,0 +1,129 @@
+.bottom-line {
+  width: 100%;
+  height: 180px;
+  background: url(../../assets/img/line-bottom.png) repeat-x bottom;
+  background-size: auto 100%;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  mix-blend-mode: lighten;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bottom-line .jammyQuests {
+  width: 8%;
+  height: 80%;
+  z-index: 9; position: relative;
+}
+.bottom-line .dailyWheel {
+  width: 7%;
+  height: 80%;
+  z-index: 9; position: relative;
+  margin: 0 1%;
+}
+.bottom-line .leaderBoard {
+  width: 10%;
+  height: 80%;
+  z-index: 9; position: relative;
+}
+.host-panel {
+  position: absolute;
+  left: 2%;
+  top: 77%;
+  z-index: 6;
+  width: 7%;
+}
+.host-panel img {
+  width: 100%;
+}
+
+.how-to {
+  position: absolute;
+  right: 2%;
+  top: 77%;
+  z-index: 6;
+  width: 7%;
+}
+
+.how-to img {
+  width: 90%;
+}
+
+.time-container {
+  position: absolute;
+  left: 50%;
+  bottom: 94%;
+  width: 180px;
+  height: 68px;
+  background: url(../../assets/img/time-bg.png) no-repeat;
+  background-size: 100%;
+  transform: translate(-48%, 0);
+}
+
+.time-container span {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  text-align: center;
+  width: 100%;
+  transform: translate(0%, -10%);
+  font-size: 18px;
+}
+@media screen and (max-width: 1600px) {
+  .time-container {
+    bottom: 90%;
+    width: 120px;
+    height: 46px;
+  }
+  .time-container span {
+    top: 45%;
+    font-size: 14px;
+  }
+  .bottom-line {
+    height: 120px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .how-to {
+    width: 17%;
+  }
+  .host-panel {
+    top: 76%;
+    width: 18%;
+  }
+}
+
+
+
+
+
+.comingSoonBottom {
+position: absolute;
+left: 20px;
+top: -40px;
+background-color: #f44336;
+color: white;
+padding: 5px 10px;
+font-size: 14px;
+border-radius: 5px;
+box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+z-index: 1000;
+display: flex;
+justify-content: center; transition: 0.4s ease-in-out 0s;
+align-items: center; width: max-content; opacity: 0;
+}
+a:hover .comingSoonBottom{ opacity: 1;}
+
+.comingSoonBottom::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #f44336 transparent transparent transparent;
+}
+

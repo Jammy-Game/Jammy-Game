@@ -1,0 +1,150 @@
+.popup-register {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 999;
+  background-color: rgb(10 11 91 / 0%);
+  backdrop-filter: blur(35px);
+  -webkit-backdrop-filter: blur(35px);
+}
+.popup-register .in {
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  z-index: 9;
+  width: 100%;
+  max-width: 1230px;
+}
+.popup-register .box-inner-area {
+  position: absolute;
+  left: 50%;
+  top: 52%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.popup-register .box-inner-area .form-left {
+  width: 45%;
+}
+.popup-register .box-inner-area .box-right-avatar {
+  width: 45%;
+}
+.popup-register .formItem {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.popup-register .formItem:last-child {
+  margin-bottom: 0;
+}
+.popup-register .formItem span {
+  display: flex;
+  margin-bottom: 10px;
+  text-shadow: 0px 0px 55.4936px #ffffff, 0px 0px 9.24894px #ffffff,
+    0px 0px 2.64255px #ffffff, 0px 0px 1.32128px #ffffff;
+  font-size: 20px;
+}
+.popup-register .formItem .input {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.popup-register .formItem input {
+  margin-bottom: 10px;
+  color: #999;
+  font-weight: bold;
+  height: 35px;
+  border-radius: 40px;
+  padding: 0 20px;
+  width: 100%;
+  border: 0;
+}
+.popup-register .formItem input::placeholder {
+  color: #d8d8d8;
+}
+.popup-register .formItem .note {
+  margin-top: -10px;
+  font-size: 12px;
+}
+.popup-register .formItem .input .icon-warning {
+  position: absolute;
+  right: -70px;
+  top: -20px;
+}
+
+.box-right-avatar h4 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.popup-register .btns-bottom {
+  position: absolute;
+  left: 50%;
+  bottom: -100px;
+  transform: translate(-50%, 0);
+}
+.avatar-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.avatar-inner a {
+  border: 2px solid #fff;
+  margin: 0 2% 3% 0;
+  margin-bottom: 20px;
+  display: flex;
+  border-radius: 15px;
+  overflow: hidden;
+  width: 18%;
+  background: #fff;
+}
+.avatar-inner a:nth-child(5n + 0) {
+  margin-right: 0;
+}
+.avatar-inner a img {
+  width: 100%;
+  display: block;
+  border-radius: 80px;
+}
+.avatar-inner a:hover,
+.avatar-inner a.active {
+  box-shadow: 0px 0px 30px rgb(255 233 0);
+  border: 2px solid #fff;
+  background: rgb(255 233 0);
+}
+.popup-register .btns-bottom .btn-sub {
+  font-size: 28px;
+  padding: 0 40px !important;
+  height: 50px;
+}
+.popup-register .text {
+  position: absolute;
+  left: 50%;
+  top: 47%;
+  width: 80%;
+  padding: 0 6%;
+  font-size: 22px;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.popup-register.register-warning .btns-bottom {
+  top: 61%;
+}
+
+@media screen and (max-width: 1620px) {
+  .popup-register .in {
+    max-width: 1030px;
+  }
+  .popup-register .formItem {
+    margin-bottom: 20px;
+  }
+  .popup-register .btns-bottom {
+    bottom: -70px;
+  }
+}

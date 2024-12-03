@@ -1,0 +1,150 @@
+.popup-daily-wheel {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 400;
+  background-color: rgb(38 32 32 / 0%);
+  backdrop-filter: blur(35px);
+  -webkit-backdrop-filter: blur(35px);
+}
+
+.popup-daily-wheel .in {
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  z-index: 9;
+  width: 100%;
+  max-width: 1480px;
+}
+
+.popup-daily-wheel .in .wheel {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 10;
+  transform: translate(-50%, -50%) rotate(0deg);
+  transition: transform 2s ease-out;
+}
+
+.popup-daily-wheel .in .arrow {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0deg);
+  top: 50%;
+  z-index: 10;
+  transition: transform 2s ease-out;
+}
+@keyframes arrowAnimation {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  50% {
+    transform: translate(-50%, -50%) rotate(60deg);
+  }
+}
+@keyframes radialAnimation {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes scaleAnimation {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.5);
+  }
+}
+.popup-daily-wheel .in .button-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 85%;
+  left: 50%;
+  gap: 1rem;
+  z-index: 11;
+  transition-duration: 1s;
+}
+.popup-daily-wheel .in .button-area a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.popup-daily-wheel .in .button-area a span {
+  position: absolute;
+  font-family: "FredokaSemiBold";
+  font-size: calc(2px + 0.9vw + 0.7vh);
+  color: white;
+  text-shadow: 0px 0px 10px #b0ff00;
+}
+.popup-daily-wheel .in .button-area a .buttonText::after {
+  content: "NING";
+  animation: 3s linear infinite contextAnim;
+}
+@keyframes contextAnim {
+  0% {
+    content: "NING";
+  }
+  33% {
+    content: "NING .";
+  }
+  67% {
+    content: "NING . .";
+  }
+  100% {
+    content: "NING . . .";
+  }
+}
+.popup-daily-wheel .in .button-area a:hover {
+  transform: scale(1.05);
+}
+
+.popup-daily-win {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 555;
+}
+.popup-daily-win .area {
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  z-index: 9;
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5% 0% 0%;
+  background-color: #452b5eaa;
+  border-radius: 2rem;
+}
+.popup-daily-win .area .prizeImg {
+  animation: 2s linear infinite alternate scaleAnimation;
+}
+.popup-daily-win .area span {
+  font-size: 24px;
+  padding: 10% 0;
+}
+.popup-daily-win .area .claim-button:hover {
+  transform: scale(1.05);
+}
+@media screen and (max-width: 1600px) {
+  .popup-daily-wheel .in {
+    max-width: 1200px;
+  }
+}

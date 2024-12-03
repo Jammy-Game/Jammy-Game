@@ -1,0 +1,585 @@
+@font-face {
+  font-family: "Campton Book";
+  src: url("./assets/font/Campton-Book.eot");
+  src: url("./assets/font/Campton-Book.eot?#iefix") format("embedded-opentype"),
+    url("./assets/font/Campton-Book.woff2") format("woff2"),
+    url("./assets/font/Campton-Book.woff") format("woff"),
+    url("./assets/font/Campton-Book.ttf") format("truetype"),
+    url("./assets/font/Campton-Book.svg#Campton-Book") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Campton Book Bold";
+  src: url("./assets/font/Campton-Bold.eot");
+  src: url("./assets/font/Campton-Bold.eot?#iefix") format("embedded-opentype"),
+    url("./assets/font/Campton-Bold.woff2") format("woff2"),
+    url("./assets/font/Campton-Bold.woff") format("woff"),
+    url("./assets/font/Campton-Bold.ttf") format("truetype"),
+    url("./assets/font/Campton-Bold.svg#Campton-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Campton ExtraLight";
+  src: url("./assets/font/Campton-ExtraLight.eot");
+  src: url("./assets/font/Campton-ExtraLight.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/font/Campton-ExtraLight.woff2") format("woff2"),
+    url("./assets/font/Campton-ExtraLight.woff") format("woff"),
+    url("./assets/font/Campton-ExtraLight.ttf") format("truetype"),
+    url("./assets/font/Campton-ExtraLight.svg#Campton-ExtraLight") format("svg");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Campton ExtraBold";
+  src: url("./assets/font/Campton-ExtraBold.eot");
+  src: url("./assets/font/Campton-ExtraBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/font/Campton-ExtraBold.woff2") format("woff2"),
+    url("./assets/font/Campton-ExtraBold.woff") format("woff"),
+    url("./assets/font/Campton-ExtraBold.ttf") format("truetype"),
+    url("./assets/font/Campton-ExtraBold.svg#Campton-ExtraBold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Campton Light";
+  src: url("./assets/font/Campton-Light.eot");
+  src: url("./assets/font/Campton-Light.eot?#iefix") format("embedded-opentype"),
+    url("./assets/font/Campton-Light.woff2") format("woff2"),
+    url("./assets/font/Campton-Light.woff") format("woff"),
+    url("./assets/font/Campton-Light.ttf") format("truetype"),
+    url("./assets/font/Campton-Light.svg#Campton-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Campton SemiBold";
+  src: url("./assets/font/Campton-SemiBold.eot");
+  src: url("./assets/font/Campton-SemiBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/font/Campton-SemiBold.woff2") format("woff2"),
+    url("./assets/font/Campton-SemiBold.woff") format("woff"),
+    url("./assets/font/Campton-SemiBold.ttf") format("truetype"),
+    url("./assets/font/Campton-SemiBold.svg#Campton-SemiBold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CamptonMedium";
+  src: url("./assets/font/Campton-Medium.eot");
+  src: url("./assets/font/Campton-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/font/Campton-Medium.woff2") format("woff2"),
+    url("./assets/font/Campton-Medium.woff") format("woff"),
+    url("./assets/font/Campton-Medium.ttf") format("truetype"),
+    url("./assets/font/Campton-Medium.svg#Campton-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CamptonThin";
+  src: url("./assets/font/Campton-Thin.eot");
+  src: url("./assets/font/Campton-Thin.eot?#iefix") format("embedded-opentype"),
+    url("./assets/font/Campton-Thin.woff2") format("woff2"),
+    url("./assets/font/Campton-Thin.woff") format("woff"),
+    url("./assets/font/Campton-Thin.ttf") format("truetype"),
+    url("./assets/font/Campton-Thin.svg#Campton-Thin") format("svg");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FredokaMedium";
+  src: url("./assets/font/Fredoka-Medium.eot");
+  src: url("./assets/font/Fredoka-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/font/Fredoka-Medium.woff2") format("woff2"),
+    url("./assets/font/Fredoka-Medium.woff") format("woff"),
+    url("./assets/font/Fredoka-Medium.ttf") format("truetype"),
+    url("./assets/font/Fredoka-Medium.svg#Fredoka-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FredokaLight";
+  src: url("./assets/font/Fredoka-Light.eot");
+  src: url("./assets/font/Fredoka-Light.eot?#iefix") format("embedded-opentype"),
+    url("./assets/font/Fredoka-Light.woff2") format("woff2"),
+    url("./assets/font/Fredoka-Light.woff") format("woff"),
+    url("./assets/font/Fredoka-Light.ttf") format("truetype"),
+    url("./assets/font/Fredoka-Light.svg#Fredoka-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FredokaBold";
+  src: url("./assets/font/Fredoka-Bold.eot");
+  src: url("./assets/font/Fredoka-Bold.eot?#iefix") format("embedded-opentype"),
+    url("./assets/font/Fredoka-Bold.woff2") format("woff2"),
+    url("./assets/font/Fredoka-Bold.woff") format("woff"),
+    url("./assets/font/Fredoka-Bold.ttf") format("truetype"),
+    url("./assets/font/Fredoka-Bold.svg#Fredoka-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FredokaRegular";
+  src: url("./assets/font/Fredoka-Regular.eot");
+  src: url("./assets/font/Fredoka-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/font/Fredoka-Regular.woff2") format("woff2"),
+    url("./assets/font/Fredoka-Regular.woff") format("woff"),
+    url("./assets/font/Fredoka-Regular.ttf") format("truetype"),
+    url("./assets/font/Fredoka-Regular.svg#Fredoka-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FredokaSemiBold";
+  src: url("./assets/font/Fredoka-SemiBold.eot");
+  src: url("./assets/font/Fredoka-SemiBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/font/Fredoka-SemiBold.woff2") format("woff2"),
+    url("./assets/font/Fredoka-SemiBold.woff") format("woff"),
+    url("./assets/font/Fredoka-SemiBold.ttf") format("truetype"),
+    url("./assets/font/Fredoka-SemiBold.svg#Fredoka-SemiBold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  width: 100%;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  overflow: hidden !important;
+  padding-top: 0;
+  font-size: 16px;
+  color: #fff;
+  background: url(./assets/img/join-bg.jpg) repeat !important;
+  background-size: 100% 100vh !important;
+  font-family: "FredokaSemiBold";
+}
+
+a,
+a img {
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+
+a:hover {
+  text-decoration: none !important;
+}
+
+.clr {
+  clear: both;
+  height: 0;
+}
+*,
+*:after,
+*::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  outline: none;
+  color: #fff;
+  font-family: "FredokaSemiBold";
+}
+
+a:focus {
+  outline: 0;
+}
+
+a {
+  text-decoration: none !important;
+}
+.popup {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 999;
+  background-color: rgb(38 32 32 / 0%);
+  backdrop-filter: blur(35px);
+  -webkit-backdrop-filter: blur(35px);
+}
+
+/* nice select css */
+
+.nice-select {
+  -webkit-tap-highlight-color: transparent; /* background-color: #fff; */
+  border-radius: 5px;
+  border: 0;
+  box-sizing: border-box;
+  clear: both;
+  cursor: pointer;
+  display: block;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: normal;
+  height: 30px;
+  outline: none;
+  padding-left: 18px;
+  padding-right: 30px;
+  position: relative;
+  text-align: left !important;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  width: 100%;
+  border-radius: 70px;
+  line-height: 28px;
+  z-index: 366;
+  position: relative;
+}
+.nice-select:hover {
+  border-color: #d0dae5;
+}
+.nice-select:active,
+.nice-select.open,
+.nice-select:focus {
+  border-color: #88bfff;
+}
+.nice-select:after {
+  border-bottom: 2px solid #90a1b5;
+  border-right: 2px solid #90a1b5;
+  content: "";
+  display: block;
+  height: 10px;
+  margin-top: -8px;
+  pointer-events: none;
+  position: absolute;
+  right: 13px;
+  top: 55%;
+  -webkit-transform-origin: 66% 66%;
+  -ms-transform-origin: 66% 66%;
+  transform-origin: 66% 66%;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  width: 10px;
+}
+.nice-select.open:after {
+  -webkit-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+  border-bottom: 2px solid #fff;
+  border-right: 2px solid #fff;
+}
+.nice-select.open .list {
+  opacity: 1;
+  pointer-events: auto;
+  -webkit-transform: scale(1) translateY(0);
+  -ms-transform: scale(1) translateY(0);
+  transform: scale(1) translateY(0);
+  box-shadow: 0px 5px 35px 0px rgba(80, 80, 80, 0.21);
+  max-height: 130px;
+  overflow: auto;
+}
+.nice-select.disabled {
+  border-color: #e7ecf2;
+  color: #90a1b5;
+  pointer-events: none;
+}
+.nice-select.disabled:after {
+  border-color: #cdd5de;
+}
+.nice-select.wide {
+  width: 100%;
+}
+.nice-select.wide .list {
+  left: 0 !important;
+  right: 0 !important;
+}
+.nice-select.right {
+  float: right;
+}
+.nice-select.right .list {
+  left: auto;
+  right: 0;
+}
+.nice-select.small {
+  font-size: 12px;
+  height: 36px;
+  line-height: 34px;
+}
+.nice-select.small:after {
+  height: 4px;
+  width: 4px;
+}
+.nice-select.small .option {
+  line-height: 34px;
+  min-height: 34px;
+}
+.nice-select.open .list {
+  box-shadow: 0 0 0 1px rgba(68, 88, 112, 0.11);
+}
+
+.nice-select .list {
+  background-color: transparent;
+  border-radius: 0;
+  box-sizing: border-box;
+  margin-top: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 104%;
+  left: 0;
+  -webkit-transform-origin: 50% 0;
+  -ms-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -webkit-transform: scale(1) translateY(0px);
+  -ms-transform: scale(1) translateY(0px);
+  transform: scale(1) translateY(0px);
+  -webkit-transition: all 0.2s cubic-bezier(0.5, 0, 0, 0.8),
+    opacity 0.15s ease-out;
+  transition: all 0.2s cubic-bezier(0.5, 0, 0, 0.8), opacity 0.15s ease-out;
+  z-index: 9;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  max-height: 0;
+  background: none;
+  border-bottom: 1px solid #429387;
+  overflow: hidden;
+  background: #00000087;
+  width: 100%;
+  padding-top: 6px;
+  border-right: 1px solid #429387;
+  border-top: 0;
+  border-left: 1px solid #429387;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  -webkit-border-bottom-right-radius: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  -moz-border-radius-bottomright: 10px;
+  -moz-border-radius-bottomleft: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.nice-select .list:hover .option:not(:hover) {
+  background-color: transparent !important;
+}
+.nice-select .option {
+  cursor: pointer;
+  font-weight: 400;
+  line-height: 30px;
+  list-style: none;
+  outline: none;
+  padding-left: 18px;
+  padding-right: 29px;
+  text-align: left;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  color: #fff !important;
+}
+.nice-select .option.selected {
+  font-weight: 500;
+}
+.nice-select .option.disabled {
+  background-color: transparent;
+  color: #90a1b5;
+  cursor: default;
+}
+.nice-select .option {
+  padding-left: 20px;
+}
+.nice-select .option:hover {
+  font-weight: 500;
+}
+.nice-select .option:hover:after {
+  opacity: 1;
+  width: 4px;
+  height: 53%;
+}
+.nice-select .option.selected:after {
+  height: 53%;
+  opacity: 1;
+}
+.nice-select .option {
+  position: relative;
+}
+.nice-select .option:after {
+  width: 0;
+  height: 0; /* border-radius:20px; */
+  background: #36557b;
+  position: absolute;
+  left: 0;
+  top: 23%;
+  content: "";
+  opacity: 0 !important;
+  -moz-transition: all 0.3s ease-in 0s;
+  -webkit-transition: all 0.3s ease-in 0s;
+  -o-transition: all 0.3s ease-in 0s;
+  -ms-transition: all 0.3s ease-in 0s;
+  transition: all 0.3s ease-in 0s;
+  width: 4px;
+}
+.no-csspointerevents .nice-select .list {
+  display: none;
+}
+.nice-select .option:last-child {
+  border-bottom: 0;
+}
+.no-csspointerevents .nice-select.open .list {
+  display: block;
+}
+/* /nice-select css end */
+
+.scrollbarCustom {
+  height: 50vh;
+  margin-top: 0;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.os-scrollbar.os-scrollbar-vertical.os-theme-dark {
+  bottom: 20px !important;
+  width: 10px !important;
+}
+
+.os-scrollbar-track {
+  background: transparent !important;
+  position: absolute !important;
+  left: -10px !important;
+  top: 0 !important;
+  width: 20px !important;
+  height: 100% !important;
+  background: url(../src/assets/img/scroll-bg.png) no-repeat top center !important;
+  content: "" !important;
+  background-size: 100% 100% !important;
+}
+
+.os-scrollbar-handle {
+  width: 99% !important;
+  min-height: 20px !important;
+  max-height: 40px !important;
+  background: linear-gradient(
+    181deg,
+    rgba(24, 81, 209, 1) 0%,
+    #0f3287 67%,
+    #0b2669 100%
+  ) !important;
+  border-radius: 60px !important;
+  overflow: hidden !important;
+  border: 1px solid #fff !important;
+}
+
+.os-scrollbar-handle::before {
+  content: "" !important;
+  display: block !important;
+  position: absolute !important;
+  background: #000 !important;
+  border-radius: 100% !important;
+  top: 3px !important;
+  bottom: 3px !important;
+  left: 3px !important;
+  right: 3px !important;
+  transform: scale(1) !important;
+  opacity: 1 !important;
+  position: absolute !important;
+  left: 0 !important;
+  top: 48% !important;
+  transform: translate(0%, -50%) !important;
+  width: 18px !important;
+  height: 16px !important;
+  background: url(../src/assets/img/menu.svg) no-repeat !important;
+  background-size: 100% !important;
+  border-radius: 0 !important;
+}
+
+.container-card .scrollbarCustom {
+  height: 51vh;
+  margin-top: 0%;
+  width: 100%;
+}
+
+.container-card .os-scrollbar-handle {
+  width: 99% !important;
+  min-height: 20px !important;
+  max-height: 40px !important;
+  background: linear-gradient(
+    181deg,
+    #c11780 0%,
+    #350940 67%,
+    #350940 100%
+  ) !important;
+  border-radius: 60px !important;
+  overflow: hidden !important;
+  border: 1px solid #fff !important;
+}
+
+.container-card .os-scrollbar-track {
+  background: transparent !important;
+  position: absolute !important;
+  left: -10px !important;
+  top: 0 !important;
+  width: 20px !important;
+  height: 100% !important;
+  background: url(../src/assets/img/pink-scroll-bg.png) no-repeat top center !important;
+  content: "" !important;
+  background-size: 100% 100% !important;
+}
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #161616;
+  background-position: 0px 0px;
+  background-size: 50px;
+}
+::-webkit-scrollbar-thumb {
+  background: #31abc2;
+  border-radius: 10px;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.z-index-100 {
+  z-index: 100;
+}

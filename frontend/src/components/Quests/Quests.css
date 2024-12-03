@@ -1,0 +1,203 @@
+.popup-quests {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 999;
+  background-color: rgb(38 32 32 / 0%);
+  backdrop-filter: blur(35px);
+  -webkit-backdrop-filter: blur(35px);
+}
+
+.popup-quests .in {
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 46%;
+  z-index: 9;
+  width: 100%;
+  max-width: 1090px;
+}
+
+.popup-quests .in .text-center-area {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 48%;
+  text-align: center;
+  line-height: 1.3;
+}
+
+.popup-quests .in .text-center-area p {
+  font-size: 32px;
+}
+
+.popup-quests .in .text-center-area .btns {
+  width: 80%;
+  margin: auto;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.popup-quests .in .text-center-area .btns a span {
+  font-weight: 600;
+  text-shadow: 0px 0px 55.4936px #00deff, 0px 0px 9.24894px #00deff,
+    0px 0px 2.64255px #00deff, 0px 0px 1.32128px #00deff;
+  font-size: 26px;
+}
+
+.popup-quests .content-area {
+  position: absolute;
+  left: 55%;
+  top: 26%;
+  transform: translate(-50%, 0%);
+  width: 84%;
+  text-align: center;
+  line-height: 1.3;
+  height: 45%;
+  overflow-y: scroll;
+  padding-right: 29px;
+}
+
+.popup-quests .item-row {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  position: relative;
+  padding-top: 20px;
+}
+
+.popup-quests .item-row::after {
+  top: 0;
+  width: 100%;
+  height: 10px;
+  background: url(../../assets/img/line.png) no-repeat;
+  background-size: 100%;
+  content: "";
+  position: absolute;
+  left: 0;
+}
+
+.popup-quests .item-row .name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.popup-quests .item-row .name span {
+  font-weight: 600;
+  font-size: calc(6px + 0.4vh + 0.8vw);
+  color: #7aeeff;
+}
+
+.popup-quests .item-row .name small {
+  font-style: normal;
+  font-weight: 500;
+  font-size: calc(6px + 0.4vh + 0.8vw);
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.popup-quests .right-area {
+  display: flex;
+  align-items: center;
+}
+
+.popup-quests .right-area .icon {
+  margin-right: 22px;
+}
+
+.popup-quests .right-area .num {
+  margin-right: 22px;
+}
+
+.popup-quests .right-area a {
+  padding: 0 40px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  border-radius: 16.0828px;
+  width: 120px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup-quests .right-area a.done {
+  color: rgba(255, 255, 255, 0.5);
+  background: linear-gradient(
+    180.53deg,
+    rgba(255, 187, 168, 0.5) -42.66%,
+    rgba(255, 137, 92, 0.5) 24.74%,
+    rgba(255, 0, 0, 0.5) 99.55%
+  );
+  border-radius: 15.8709px;
+}
+
+.popup-quests .right-area a.claim {
+  color: #ff1a11;
+  background: linear-gradient(0.53deg, #ff895c 0.45%, #ffbba8 99.54%);
+  border-radius: 16.0828px;
+  display: flex;
+  align-items: center;
+}
+
+.popup-quests .right-area a.go {
+  color: #fff;
+  background: linear-gradient(
+    180.53deg,
+    #ffbba8 -42.66%,
+    #ff895c 24.74%,
+    #ff0000 99.55%
+  );
+  display: flex;
+  align-items: center;
+}
+
+.adimg {
+  width: 100%;
+}
+.warn_pop {
+  width: 47%;
+  z-index: 99999;
+}
+.adstatus {
+  color: #fff;
+  font-size: 11px;
+}
+
+.btn-done {
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 180px;
+  right: 70px;
+  z-index: 999;
+  color: rgba(255, 255, 255, 0.5);
+  pointer-events: none;
+  background: linear-gradient(
+    180.53deg,
+    rgba(255, 187, 168, 0.5) -42.66%,
+    rgba(255, 137, 92, 0.5) 24.74%,
+    rgba(255, 0, 0, 0.5) 99.55%
+  );
+  border-radius: 15.8709px;
+}
+.btnd {
+  z-index: 999;
+  position: absolute;
+  top: 74%;
+  cursor: pointer;
+  right: 6%;
+  width: fit-content;
+}
+
+@media screen and (max-width: 1620px) {
+  .popup-quests .in {
+    max-width: 780px;
+  }
+}

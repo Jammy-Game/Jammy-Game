@@ -1,0 +1,510 @@
+.popup-profile {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 999;
+  background-color: rgb(10 11 91 / 0%);
+  backdrop-filter: blur(35px);
+  -webkit-backdrop-filter: blur(35px);
+}
+
+.popup-profile .in {
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  z-index: 9;
+  width: 100%;
+  max-width: 1230px;
+}
+.popup-profile .in .text-area {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  width: 70%;
+}
+.popup-profile .in .text-area .item-row {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+.popup-profile .in .text-area .item-row .col-name {
+  width: 35%;
+  color: #ffec3f;
+  text-shadow: 0px 0px 7.94623px #ffec3f;
+  font-size: calc(4px + 0.6vw + 0.4vh);
+}
+.popup-profile .in .text-area .item-row .col-right {
+  width: 50%;
+  color: #ffffff;
+  text-shadow: 0px 0px 7.94623px #ffffff;
+  font-size: calc(4px + 0.6vw + 0.4vh);
+}
+
+.popup-profile .in .bottom-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 2% 20% 0 0;
+}
+.popup-profile .in .bottom-links a {
+  margin: 0;
+  text-shadow: 0px 0px 7.94623px #ffffff;
+  position: relative;
+}
+
+.popup-profile .in .top-links {
+  position: absolute;
+  left: 50%;
+  top: 14%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.popup-profile .in .top-links a {
+  margin: 0;
+  position: relative;
+  width: 16%;
+}
+.popup-profile .in .top-links a span {
+  text-shadow: 0px 0px 63.2712px #00deff, 0px 0px 36.155px #00deff,
+    0px 0px 21.0904px #00deff, 0px 0px 10.5452px #00deff,
+    0px 0px 3.01291px #00deff, 0px 0px 1.50646px #00deff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  font-size: calc(4px + 0.6vw + 0.3vh);
+  text-align: center;
+}
+.popup-profile .in .top-links img {
+  width: 100%;
+  transition: 0.3s ease-in-out 0s;
+}
+.popup-profile .in .top-links img.activeBg {
+  width: 100%;
+  transition: 0.3s ease-in-out 0s;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+}
+.popup-profile .in .top-links a.active img {
+  opacity: 1 !important;
+}
+
+.popup-profile .in {
+  position: relative;
+}
+.popup-profile .in .box-inner {
+  display: none;
+}
+
+.game-hash .items-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 65%;
+  padding-right: 0;
+  display: flex;
+  justify-content: center;
+}
+.game-hash .items-area {
+  width: 25%;
+  height: auto;
+  margin-top: 10%;
+}
+.game-hash .game-info {
+  display: flex;
+  position: relative;
+  width: 71%;
+  border: 4px solid #e843bc;
+  border-radius: 43.8432px;
+  padding: 20px;
+  box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 0rem #e843bcf0,
+    0 0 2rem #e843bc, 0 0 0.2rem #e843bccf, inset 0 0 1.3rem #e843bcbd;
+  margin-top: 0;
+  margin-left: 3%;
+}
+.game-hash .game-info h3 {
+  color: #ffec3f;
+  text-shadow: 0px 0px 7.94623px #ffec3f;
+  text-align: center;
+  width: 100%;
+  text-align: center;
+  font-size: calc(2px + 1vw + 0.5vh);
+}
+.game-hash .items-area .item {
+  margin-bottom: 8px;
+  font-size: 17px;
+  text-shadow: 0px 0px 7.94623px #ffffff;
+}
+.game-hash-info-area {
+  display: flex;
+}
+.game-hash-info-area .item-row {
+  display: flex;
+  align-items: center;
+  line-height: 1.2;
+  justify-content: flex-start;
+}
+.game-hash-info-area .item-row .icon {
+  margin-right: 10px;
+}
+.game-hash-info-area .item-row h4{
+  margin-bottom: 4px;
+  font-size: calc(2px + 0.7vw + 0.4vh);
+  text-shadow: 0px 0px 7.94623px #ffffff;
+}
+.right-area .text-area-right h4 {
+  text-align: center;
+  margin-bottom: 1%;
+  font-size: calc(4px + 0.8vw + 0.6vh);
+  text-shadow: 0px 0px 8px #ffffff;
+}
+.text-area-right .items-area {
+  width: 100%;
+}
+.game-hash-info-area .item-row h5 {
+  margin-bottom: 0px;
+  font-size: calc(2px + 0.5vw + 0.3vh);
+  text-shadow: 0px 0px 7.94623px #ffffff;
+}
+.game-hash-info-area .right-area {
+  display: flex;
+  align-items: center;
+  text-shadow: 0px 0px 7.94623px #ffffff;
+  flex-direction: column;
+  padding: 5% 0 0 10%;
+}
+.game-hash-info-area .right-area .icon {
+  top: 0;
+  position: absolute;
+  right: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.game-hash-info-area .right-area .icon img {
+  width: 25%;
+}
+.game-hash-info-area .right-area p {
+  margin-bottom: 5px;
+}
+
+.profil-image {
+  position: absolute;
+  right: -1.5%;
+  top: 31%;
+  width: 27%;
+}
+.profil-image::after {
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  right: 15px;
+  top: -1px;
+  background: url(../../assets/img/profil-image-bg.png) no-repeat center;
+  background-size: 100%;
+}
+
+.statics-shape {
+  position: absolute;
+  right: -40%;
+  top: 15%;
+  width: 35%;
+  overflow: hidden;
+  border-radius: 0;
+}
+.game-shape {
+  position: absolute;
+  right: 0%;
+  top: 30%;
+  width: 20%;
+  overflow: hidden;
+  border-radius: 0;
+}
+
+.game-shape img,
+.statics-shape img,
+.profil-image img {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+.profil-image img {
+  width: 60%;
+  display: block;
+  margin: 46px auto;
+  border-radius: 50%;
+}
+
+.statics .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.statics {
+  position: absolute;
+  top: 25%;
+  left: 45%;
+  width: 60% !important;
+  transform: translate(-50%, 0px);
+}
+.statics .item span {
+  color: #f2c8ff;
+  text-shadow: 0px 0px 7.94623px #ffffff;
+  font-weight: 600;
+  font-size: calc(2px + 0.6vw + 0.4vh);
+}
+.statics .item small {
+  color: #ffffff;
+  text-shadow: 0px 0px 7.94623px #ffffff;
+  font-weight: 600;
+  font-size: calc(2px + 0.4vw + 0.4vh);
+}
+
+.ranks .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.ranks .item img {
+  height: 100px;
+}
+.ranks {
+  position: absolute;
+  top: 23%;
+  left: 47%;
+  width: 60% !important;
+  transform: translate(-50%, 0px);
+}
+.ranks .item span {
+  font-weight: 600;
+  font-size: 20px;
+  color: #e843bc;
+  text-shadow: 0px 0px 29.937px #e843bc, 0px 0px 17.1068px #e843bc,
+    0px 0px 0.712785px #e843bc;
+}
+.ranks .item small {
+  color: #ffffff;
+  text-shadow: 0px 0px 7.94623px #ffffff;
+  font-weight: 600;
+  font-size: 18px;
+}
+.ranks-shape {
+  position: absolute;
+  right: -41.5%;
+  top: 50%;
+  width: 46%;
+  overflow: hidden;
+  border-radius: 0;
+  transform: translate(0%, -50%);
+}
+.ranks-shape img {
+  width: 100%;
+}
+
+.hash-id span {
+  color: #ffec3f;
+  text-shadow: 0px 0px 7.94623px #ffec3f;
+  margin-right: 10px;
+}
+.hash-id small {
+  text-shadow: 0px 0px 7.94623px #ffffff;
+}
+.hash-id {
+  font-size: 75%;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+.profile-change-buttons {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 2;
+  display: flex;
+  top: 75%;
+  width: 30%;
+  justify-content: space-between;
+}
+.profile-change-buttons img {
+  width: 100% !important;
+}
+.tooltip-content {
+  position: absolute;
+  left: 41%;
+  top: -44%;
+  display: none;
+}
+.tooltip-content p {
+  position: absolute;
+  left: 0;
+  top: 0;
+  text-align: center;
+  font-size: 8px;
+  text-transform: uppercase;
+  width: 100%;
+  line-height: 21px;
+}
+.profil-image .select {
+  position: absolute;
+  top: 56%;
+  border: 2px solid #fff;
+  background: none;
+  border-radius: 100px;
+  right: 13%;
+  font-size: 11px;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+  box-shadow: inset 0px 0px 11px rgb(255 255 255);
+}
+.profil-image .select:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 0px 16px rgb(255 255 255);
+  opacity: 1;
+  border-radius: 60px;
+}
+.join-user-info {
+  position: relative;
+  right: 0;
+  z-index: 10;
+}
+
+.join-user-info .profile-img {
+  position: absolute;
+  left: 4.5%;
+  top: 15%;
+  width: 12%;
+  border-radius: 40px;
+  z-index: 3;
+}
+
+.join-user-info .bg {
+  width: 100%;
+  display: block;
+}
+
+.join-user-info .text {
+  position: absolute;
+  left: 24%;
+  top: 30%;
+  width: 50%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-overflow: ellipsis;
+  text-wrap: nowrap;
+}
+
+.join-user-info .text .sub-title {
+  text-shadow: 0px 0px 55.4936px #00deff, 0px 0px 9.24894px #00deff,
+    0px 0px 2.64255px #00deff, 0px 0px 1.32128px #00deff;
+  font-size: calc(2px + 1vw + 0.4vh);
+}
+
+.join-user-info .text .wallet-id {
+  font-size: calc(2px + 0.8vw + 0.3vh);
+  text-shadow: 0px 0px 55.4936px #00deff, 0px 0px 9.24894px #00deff,
+    0px 0px 2.64255px #00deff, 0px 0px 1.32128px #00deff;
+}
+
+.join-user-info .wallet-arrow {
+  position: absolute;
+  right: 8%;
+  width: 15%;
+  top: 32%;
+}
+.join-user-info .wallet-arrow img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+.join-user-info .wallet-menu {
+  width: 89%;
+  position: absolute;
+  top: 55%;
+  right: 5%;
+  z-index: -1;
+  transition-duration: 0.5s;
+}
+.join-user-info .wallet-menu .menu-bg {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+.join-user-info .wallet-menu .arrow {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+.join-user-info .wallet-menu .menu-in {
+  padding: 11% 5% 2%;
+}
+.join-user-info .wallet-menu .menu-in .el {
+  cursor: pointer;
+  width: 100%;
+  z-index: 3;
+  position: relative;
+  padding: 0% 15% 3%;
+}
+.join-user-info .wallet-menu .menu-in .menu-social-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0% 15%;
+}
+.join-user-info .wallet-menu .menu-in .menu-social-area img {
+  width: auto;
+  height: 36px;
+  z-index: 3;
+  position: relative;
+}
+.join-user-info .wallet-menu .menu-in .menu-social-area .pad3 {
+  padding: 2%;
+  cursor: pointer;
+}
+@media screen and (min-width: 2200px) {
+  .join-user-info {
+    width: 20%;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .popup-profile .in{
+    max-width: 1024px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .join-user-info .wallet-menu .menu-in .menu-social-area img {
+    height: 24px;
+  }
+}

@@ -1,0 +1,104 @@
+.popup-warning .in {
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  z-index: 9;
+  width: 100%;
+  max-width: 1230px;
+}
+.popup-warning .in .text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 80%;
+  padding: 0 10%;
+  font-size: 24px;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.popup-warning .in .txlink {
+  position: absolute;
+  left: 50%;
+  top: 56%;
+  width: 80%;
+  padding: 0 10%;
+  font-size: 24px;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #4be6f4;
+}
+.btnloading{
+  pointer-events: none !important;
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+.popup-warning .in .text a {
+  color: white;
+  overflow-wrap: break-word;
+}
+.popup-warning .in .title {
+  position: absolute;
+  left: 50%;
+  top: 28%;
+  width: auto;
+  padding: 0 5%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.popup-warning .in .title span {
+  font-size: calc(12px + 50%);
+  position: relative;
+  z-index: 10;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+}
+.popup-warning .in .title img {
+  position: absolute;
+  width: 100%;
+  z-index: 9;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+}
+.popup-warning .btns-bottom {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: 60%;
+  z-index: 10;
+}
+.popup-warning .btns-bottom .btn-sub {
+  padding: 0 21px;
+  border-radius: 45px;
+  border: 0;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  margin: 0 6px;
+  background: linear-gradient(
+    180.53deg,
+    #ffbba8 -42.66%,
+    #ff895c 24.74%,
+    #ff0000 99.55%
+  );
+  border-radius: 18px;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  transition: 0.4s ease-in 0s;
+}
+.popup-warning .btns-bottom .btn-sub:hover {
+  background: linear-gradient(
+    180.53deg,
+    #ff3d06 -42.66%,
+    #c03500 24.74%,
+    #ff0000 99.55%
+  );
+}
+.popup-warning .btns-bottom .btn-sub:focus {
+  background: linear-gradient(0.53deg, #ff895c 0.45%, #ffbba8 99.54%);
+}
+.popup-warning .btns-bottom .btn-sub.active {
+  background: linear-gradient(0.53deg, #ff895c 0.45%, #ffbba8 99.54%);
+}
